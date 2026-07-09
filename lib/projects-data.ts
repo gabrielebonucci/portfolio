@@ -27,8 +27,8 @@ export const featuredProjects: Array<{
     stars: 0,
     forks: 0,
     url: "https://github.com/gabrielebonucci/react-boolflix",
-    // Cover screenshot — replace the placeholder file at public/projects/boolflix-cover.png
-    thumbnail: "/projects/boolflix-cover.png",
+    // Cover screenshot at public/projects/boolflix.png
+    thumbnail: "/projects/boolflix.png",
     featured: true,
     highlight: true,
     role: "solo",
@@ -44,8 +44,8 @@ export const featuredProjects: Array<{
     stars: 0,
     forks: 0,
     url: "https://github.com/gabrielebonucci",
-    // Cover screenshot — replace the placeholder file at public/projects/trankiliti-fc-cover.png
-    thumbnail: "/projects/trankiliti-fc-cover.png",
+    // Cover screenshot at public/projects/trankiliti.png
+    thumbnail: "/projects/trankiliti.png",
     featured: true,
     role: "solo",
   },

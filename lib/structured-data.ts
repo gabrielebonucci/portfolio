@@ -59,8 +59,7 @@ export function generatePersonStructuredData() {
     '@type': 'Person',
     name: siteConfig.name,
     url: siteConfig.url,
-    // TODO: Sostituire con URL della foto professionale reale di Gabriele Bonucci
-    image: `${siteConfig.url}/developer-portrait.png`,
+    image: `${siteConfig.url}/developer-portrait.jpg`,
     sameAs: [siteConfig.github, siteConfig.linkedin],
     jobTitle: siteConfig.role,
     email: siteConfig.email,

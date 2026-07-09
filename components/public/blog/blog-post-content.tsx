@@ -105,7 +105,6 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
           >
             <div className="flex items-center gap-4">
               <Avatar className="h-12 w-12 border-2 border-border">
-                {/* TODO: Sostituire /developer-portrait.png con una foto professionale reale di Gabriele Bonucci */}
                 <AvatarImage src={post.author.avatar || "/placeholder.svg"} alt={post.author.name} />
                 <AvatarFallback className="bg-secondary font-mono">
                   {post.author.name

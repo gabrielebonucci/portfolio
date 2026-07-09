@@ -19,10 +19,9 @@ export interface BlogPost {
   color: string
 }
 
-// TODO: Sostituire /developer-portrait.png con una foto professionale reale di Gabriele Bonucci
 const author = {
   name: siteConfig.name,
-  avatar: "/developer-portrait.png",
+  avatar: "/developer-portrait.jpg",
   role: siteConfig.role,
 }
 

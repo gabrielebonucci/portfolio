@@ -33,11 +33,10 @@ export function Footer() {
             <div className="pt-2">
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-xl border border-primary bg-primary/10 px-8 py-4 sm:py-4 font-mono text-sm text-primary transition-all duration-500 hover:text-primary-foreground active:scale-[0.98] w-full sm:w-auto"
+                className="group inline-flex items-center justify-center gap-3 rounded-xl bg-primary px-8 py-4 font-mono text-sm font-medium text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/30 active:scale-[0.98] w-full sm:w-auto"
               >
-                <span className="relative z-10">{t("footer.cta")}</span>
-                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">→</span>
-                <span className="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0" />
+                <span>{t("footer.cta")}</span>
+                <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </a>
             </div>
           </div>
