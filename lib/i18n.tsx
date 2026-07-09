@@ -83,6 +83,20 @@ const translations: Record<Language, Record<string, string>> = {
     "wip.1.description": "Website prototype for The Lab Caffè — branding, layout, and interactive sections",
     "wip.2.description":
       "n8n workflow automation with AI agents for restaurant and bar reservation management via WhatsApp",
+    "wip.3.description": "Netflix clone with TMDB API search — refining UI, error handling, and result filtering",
+    "wip.4.description": "Football team website and admin panel with Firebase — squad, matches, standings, and stats",
+    "workbench.pageSubtitle":
+      "Active experiments and prototypes — web apps, AI automations, and client projects currently in development.",
+    "workbench.stats": "Stats",
+    "workbench.active": "Active",
+    "workbench.avgProgress": "Avg Progress",
+    "workbench.recentActivity": "Recent Activity",
+    "act.0.message": "Update hero section and menu animations",
+    "act.0.time": "2 days ago",
+    "act.1.message": "Improve TMDB search result normalization",
+    "act.1.time": "1 week ago",
+    "act.2.message": "Add n8n workflow for reservation confirmations",
+    "act.2.time": "3 days ago",
 
     // Tech stack (home)
     "stack.eyebrow": "Toolbox",
@@ -92,6 +106,68 @@ const translations: Record<Language, Record<string, string>> = {
     "stack.backend": "Backend & Database",
     "stack.automation": "AI & Automation",
     "stack.more": "Full skill set",
+
+    // Introduction / About page
+    "intro.hero.eyebrow": "About",
+    "intro.hero.title.a": "Full Stack Web Developer",
+    "intro.hero.title.b": "& AI Automation",
+    "intro.hero.bio":
+      "Full Stack Developer specializing in modern interfaces with React and AI automations. I build websites and web applications with React, JavaScript, Node.js/Express, and develop intelligent automations with n8n and AI agents — including WhatsApp chatbots for restaurant and bar reservation management. Trained through the Boolean Master in Full Stack Web Development and the ITS Umbria Academy Master in Automation and Digital Systems (95/100).",
+    "intro.about.eyebrow": "About Me",
+    "intro.about.heading": "Developer from Spoleto, Umbria (Italy)",
+    "intro.about.p1":
+      "I'm a Full Stack Developer with a strong focus on modern React interfaces and intelligent workflow automations. My path combines hands-on web development training at Boolean with a specialized master in automation and digital systems at ITS Umbria Academy, where I graduated with 95/100.",
+    "intro.about.p2":
+      "Beyond code, I bring experience from data management at AGRIEURO, social media design at Very Important Web, and over six years as a FIGC football referee — skills in precision, communication, and performing under pressure that translate directly into professional development work.",
+    "intro.about.p3":
+      "Currently exploring AI-powered automations with n8n, building WhatsApp chatbots for hospitality businesses, and shipping React applications from concept to deployment.",
+    "intro.skills.eyebrow": "Technical Stack",
+    "intro.skills.heading": "Skills & Tools",
+    "intro.career.eyebrow": "Career",
+    "intro.career.heading": "Experience",
+    "intro.education.eyebrow": "Education",
+    "intro.education.heading": "Formation",
+    "intro.exp.0.role": "Data Entry Specialist",
+    "intro.exp.0.period": "1 year 7 months",
+    "intro.exp.0.desc": "Database management and product data entry for the outlet department in the company ERP system.",
+    "intro.exp.1.role": "Junior Web Designer",
+    "intro.exp.1.period": "6 months",
+    "intro.exp.1.desc": "Created graphics and managed Instagram profiles for client companies.",
+    "intro.exp.2.role": "Football Referee",
+    "intro.exp.2.period": "Since 2018",
+    "intro.exp.2.desc": "Leadership, quick decision-making, and pressure management on the field.",
+    "intro.edu.0.title": "Master in Full Stack Web Development",
+    "intro.edu.1.title": "Automation and Mechatronic Systems (95/100)",
+    "intro.edu.2.title": "Technical and Professional Institute Diploma",
+    "intro.focus.eyebrow": "Focus Areas",
+    "intro.focus.heading": "What I Build",
+    "intro.focus.0.title": "Full Stack Web Apps",
+    "intro.focus.0.desc":
+      "React frontends with Node.js/Express backends, MySQL databases, and deployment-ready architectures.",
+    "intro.focus.1.title": "AI & Workflow Automation",
+    "intro.focus.1.desc":
+      "n8n workflows, AI agents, and WhatsApp chatbots for booking management in restaurants and bars.",
+    "intro.focus.2.title": "Modern Interfaces",
+    "intro.focus.2.desc":
+      "Responsive, component-driven UIs with React, Vite, and API integrations for dynamic user experiences.",
+
+    // Blog (UI chrome only — article content lives in blog-data)
+    "blog.hero.eyebrow": "Digital Journal",
+    "blog.hero.title.b": "Insights",
+    "blog.hero.desc":
+      "Articles on React, Firebase, AI automation, and full stack development — notes from the lab by",
+    "blog.list.featured": "featured",
+    "blog.list.readArticle": "read article",
+    "blog.list.read": "Read",
+    "blog.sidebar.search": "Search articles...",
+    "blog.sidebar.categories": "Categories",
+    "blog.sidebar.allPosts": "All Posts",
+    "blog.sidebar.popularTags": "Popular Tags",
+    "blog.sidebar.newsletter": "Newsletter",
+    "blog.sidebar.newsletterDesc": "Get notified about new articles and experiments. No spam, unsubscribe anytime.",
+    "blog.sidebar.emailPlaceholder": "your@email.com",
+    "blog.sidebar.subscribe": "Subscribe",
+    "blog.sidebar.rss": "Subscribe via RSS",
   },
   it: {
     // Header / nav
@@ -163,6 +239,22 @@ const translations: Record<Language, Record<string, string>> = {
     "wip.1.description": "Prototipo del sito per The Lab Caffè — branding, layout e sezioni interattive",
     "wip.2.description":
       "Automazione di flussi con n8n e agenti AI per la gestione delle prenotazioni di ristoranti e bar tramite WhatsApp",
+    "wip.3.description":
+      "Clone di Netflix con ricerca tramite API TMDB — rifinitura di UI, gestione errori e filtraggio dei risultati",
+    "wip.4.description":
+      "Sito e pannello di gestione per una squadra di calcio con Firebase — rosa, partite, classifica e statistiche",
+    "workbench.pageSubtitle":
+      "Esperimenti e prototipi attivi — web app, automazioni AI e progetti per clienti attualmente in sviluppo.",
+    "workbench.stats": "Statistiche",
+    "workbench.active": "Attivi",
+    "workbench.avgProgress": "Progresso medio",
+    "workbench.recentActivity": "Attività recente",
+    "act.0.message": "Aggiornata la sezione hero e le animazioni del menu",
+    "act.0.time": "2 giorni fa",
+    "act.1.message": "Migliorata la normalizzazione dei risultati di ricerca TMDB",
+    "act.1.time": "1 settimana fa",
+    "act.2.message": "Aggiunto flusso n8n per le conferme di prenotazione",
+    "act.2.time": "3 giorni fa",
 
     // Tech stack (home)
     "stack.eyebrow": "Strumenti",
@@ -172,6 +264,81 @@ const translations: Record<Language, Record<string, string>> = {
     "stack.backend": "Backend & Database",
     "stack.automation": "AI & Automazione",
     "stack.more": "Competenze complete",
+
+    // Introduction / About page
+    "intro.hero.eyebrow": "Chi è",
+    "intro.hero.title.a": "Sviluppatore Full Stack Web",
+    "intro.hero.title.b": "& Automazione AI",
+    "intro.hero.bio":
+      "Sviluppatore Full Stack specializzato in interfacce moderne con React e automazioni basate su AI. Realizzo siti e applicazioni web con React, JavaScript, Node.js/Express e sviluppo automazioni intelligenti con n8n e agenti AI — inclusi chatbot WhatsApp per la gestione delle prenotazioni di ristoranti e bar. Formato attraverso il Master Boolean in Sviluppo Web Full Stack e il Master ITS Umbria Academy in Automazione e Sistemi Digitali (95/100).",
+    "intro.about.eyebrow": "Chi sono",
+    "intro.about.heading": "Sviluppatore da Spoleto, Umbria (Italia)",
+    "intro.about.p1":
+      "Sono uno Sviluppatore Full Stack con una forte attenzione alle interfacce React moderne e alle automazioni intelligenti dei flussi di lavoro. Il mio percorso unisce una formazione pratica nello sviluppo web presso Boolean a un master specializzato in automazione e sistemi digitali all'ITS Umbria Academy, dove mi sono diplomato con 95/100.",
+    "intro.about.p2":
+      "Oltre al codice, porto con me l'esperienza nella gestione dati in AGRIEURO, nella grafica social presso Very Important Web e in oltre sei anni come arbitro di calcio FIGC — competenze in precisione, comunicazione e gestione della pressione che si traducono direttamente nel lavoro di sviluppo professionale.",
+    "intro.about.p3":
+      "Attualmente esploro automazioni basate su AI con n8n, sviluppo chatbot WhatsApp per attività del settore hospitality e realizzo applicazioni React dal concept al deployment.",
+    "intro.skills.eyebrow": "Stack tecnico",
+    "intro.skills.heading": "Competenze e strumenti",
+    "intro.career.eyebrow": "Carriera",
+    "intro.career.heading": "Esperienza",
+    "intro.education.eyebrow": "Istruzione",
+    "intro.education.heading": "Formazione",
+    "intro.exp.0.role": "Specialista Data Entry",
+    "intro.exp.0.period": "1 anno e 7 mesi",
+    "intro.exp.0.desc": "Gestione del database e inserimento dati prodotto per il reparto outlet nel sistema ERP aziendale.",
+    "intro.exp.1.role": "Web Designer Junior",
+    "intro.exp.1.period": "6 mesi",
+    "intro.exp.1.desc": "Realizzazione di grafiche e gestione di profili Instagram per aziende clienti.",
+    "intro.exp.2.role": "Arbitro di calcio",
+    "intro.exp.2.period": "Dal 2018",
+    "intro.exp.2.desc": "Leadership, capacità decisionale rapida e gestione della pressione in campo.",
+    "intro.edu.0.title": "Master in Sviluppo Web Full Stack",
+    "intro.edu.1.title": "Sistemi di Automazione e Meccatronica (95/100)",
+    "intro.edu.2.title": "Diploma di Istituto Tecnico e Professionale",
+    "intro.focus.eyebrow": "Aree di interesse",
+    "intro.focus.heading": "Cosa costruisco",
+    "intro.focus.0.title": "Web App Full Stack",
+    "intro.focus.0.desc":
+      "Frontend React con backend Node.js/Express, database MySQL e architetture pronte per il deployment.",
+    "intro.focus.1.title": "AI e Automazione dei flussi",
+    "intro.focus.1.desc":
+      "Flussi n8n, agenti AI e chatbot WhatsApp per la gestione delle prenotazioni in ristoranti e bar.",
+    "intro.focus.2.title": "Interfacce moderne",
+    "intro.focus.2.desc":
+      "UI responsive e basate su componenti con React, Vite e integrazioni API per esperienze utente dinamiche.",
+
+    // Skill category / tag overrides (rendered via t(literal); proper nouns fall through)
+    "Tools": "Strumenti",
+    "Languages": "Lingue",
+    "AI & Automation": "AI & Automazione",
+    "AI Agents": "Agenti AI",
+    "Workflow Automation": "Automazione di flussi",
+    "WhatsApp Chatbot": "Chatbot WhatsApp",
+    "Adobe (social & brand graphics)": "Adobe (grafiche social e brand)",
+    "Italian (native)": "Italiano (madrelingua)",
+    "English": "Inglese",
+    "French": "Francese",
+    "Spanish": "Spagnolo",
+
+    // Blog (UI chrome only — article content lives in blog-data)
+    "blog.hero.eyebrow": "Diario digitale",
+    "blog.hero.title.b": "Approfondimenti",
+    "blog.hero.desc":
+      "Articoli su React, Firebase, automazione AI e sviluppo full stack — appunti dal laboratorio di",
+    "blog.list.featured": "in evidenza",
+    "blog.list.readArticle": "leggi l'articolo",
+    "blog.list.read": "Leggi",
+    "blog.sidebar.search": "Cerca articoli...",
+    "blog.sidebar.categories": "Categorie",
+    "blog.sidebar.allPosts": "Tutti gli articoli",
+    "blog.sidebar.popularTags": "Tag popolari",
+    "blog.sidebar.newsletter": "Newsletter",
+    "blog.sidebar.newsletterDesc": "Ricevi aggiornamenti su nuovi articoli ed esperimenti. Niente spam, cancellati quando vuoi.",
+    "blog.sidebar.emailPlaceholder": "tua@email.com",
+    "blog.sidebar.subscribe": "Iscriviti",
+    "blog.sidebar.rss": "Iscriviti via RSS",
   },
 }
 

@@ -6,7 +6,7 @@ export const siteConfig = {
     "Junior Full Stack Developer specializing in modern React interfaces and AI automations. Building web apps with React, Node.js/Express, and intelligent workflows with n8n and AI agents.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://gabrielebonucci.vercel.app",
   location: "Spoleto, Umbria (Italy)",
-  role: "Junior Full Stack Web Developer & AI Automation Specialist",
+  role: "Full Stack Web Developer & AI Automation Specialist",
   email: "g.bonucci99@gmail.com",
   phone: "+39 366 147 3344",
   phoneHref: "tel:+393661473344",

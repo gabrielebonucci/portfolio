@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { Github, ExternalLink, Clock, GitBranch, Activity } from "lucide-react"
+import { useLanguage } from "@/lib/i18n"
 
 const wipItems = [
   {
@@ -54,6 +55,7 @@ const recentActivity = [
 ]
 
 export function WorkbenchPageContent() {
+  const { t } = useLanguage()
   const [hoveredItem, setHoveredItem] = useState<number | null>(null)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -67,11 +69,11 @@ export function WorkbenchPageContent() {
         {/* Hero */}
         <div className={cn("mb-12 sm:mb-16 space-y-4 opacity-0", isVisible && "animate-fade-in-up")}>
           <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">
-            Work in Progress
+            {t("workbench.eyebrow")}
           </p>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">Workbench</h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">{t("workbench.heading")}</h1>
           <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Active experiments and prototypes — web apps, AI automations, and client projects currently in development.
+            {t("workbench.pageSubtitle")}
           </p>
         </div>
 
@@ -94,7 +96,7 @@ export function WorkbenchPageContent() {
                 <span className="ml-4 font-mono text-xs text-muted-foreground truncate">~/gabrielebonucci/active</span>
                 <div className="ml-auto flex items-center gap-2 text-muted-foreground">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-                  <span className="font-mono text-xs">live</span>
+                  <span className="font-mono text-xs">{t("workbench.live")}</span>
                 </div>
               </div>
 
@@ -128,7 +130,7 @@ export function WorkbenchPageContent() {
                         </div>
                       </div>
                       <p className="pl-6 text-xs text-muted-foreground line-clamp-2 sm:line-clamp-1">
-                        {item.description}
+                        {t(`wip.${item.id}.description`)}
                       </p>
                       <div className="pl-6 flex items-center gap-4 text-xs text-muted-foreground">
                         <span className="flex items-center gap-1">
@@ -174,7 +176,7 @@ export function WorkbenchPageContent() {
                 <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">
                   <span className="text-primary">❯</span>
                   <span className="typing-cursor truncate">git status --all</span>
-                  <span className="ml-auto text-primary/50 hidden sm:block">press enter to run</span>
+                  <span className="ml-auto text-primary/50 hidden sm:block">{t("workbench.runHint")}</span>
                 </div>
               </div>
             </div>
@@ -189,17 +191,17 @@ export function WorkbenchPageContent() {
                 isVisible && "animate-fade-in-up stagger-3",
               )}
             >
-              <h3 className="font-mono text-xs uppercase tracking-wider text-primary mb-4">Stats</h3>
+              <h3 className="font-mono text-xs uppercase tracking-wider text-primary mb-4">{t("workbench.stats")}</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-3 rounded-lg bg-secondary/30">
                   <p className="text-2xl font-bold text-foreground">{wipItems.length}</p>
-                  <p className="font-mono text-xs text-muted-foreground">Active</p>
+                  <p className="font-mono text-xs text-muted-foreground">{t("workbench.active")}</p>
                 </div>
                 <div className="text-center p-3 rounded-lg bg-secondary/30">
                   <p className="text-2xl font-bold text-primary">
                     {Math.round(wipItems.reduce((a, b) => a + b.progress, 0) / wipItems.length)}%
                   </p>
-                  <p className="font-mono text-xs text-muted-foreground">Avg Progress</p>
+                  <p className="font-mono text-xs text-muted-foreground">{t("workbench.avgProgress")}</p>
                 </div>
               </div>
             </div>
@@ -213,7 +215,7 @@ export function WorkbenchPageContent() {
             >
               <h3 className="font-mono text-xs uppercase tracking-wider text-primary mb-4 flex items-center gap-2">
                 <Activity className="h-3.5 w-3.5" />
-                Recent Activity
+                {t("workbench.recentActivity")}
               </h3>
               <div className="space-y-3">
                 {recentActivity.map((activity, index) => (
@@ -225,10 +227,10 @@ export function WorkbenchPageContent() {
                       )}
                     />
                     <div className="min-w-0 flex-1">
-                      <p className="text-foreground truncate">{activity.message}</p>
+                      <p className="text-foreground truncate">{t(`act.${index}.message`)}</p>
                       <p className="text-muted-foreground flex items-center gap-1">
                         <Clock className="h-3 w-3" />
-                        {activity.time}
+                        {t(`act.${index}.time`)}
                       </p>
                     </div>
                   </div>
