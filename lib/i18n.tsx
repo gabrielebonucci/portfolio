@@ -73,8 +73,6 @@ const translations: Record<Language, Record<string, string>> = {
       "Solves fragmented movie/series discovery by unifying TMDB film and TV results into one real-time search grid. Solo build in React, Vite and Axios — parallel API calls normalized into a single responsive UI with posters, ratings and original titles.",
     "projects.1.description":
       "Replaces spreadsheets for an amateur football team with a management platform: live squad roster, match scheduling, automatic standings and player stats. Solo full-stack build in React and Firebase/Firestore, with authentication and real-time data sync.",
-    "projects.2.description":
-      "A pixel-faithful DC Comics homepage rebuilt to practice scalable UI architecture. Solo front-end project in React/Vite structured around reusable components (Header, Main, ServicesBanner, Footer) with data-driven, dynamic section rendering.",
 
     // Workbench
     "workbench.eyebrow": "Work in Progress",
@@ -155,8 +153,6 @@ const translations: Record<Language, Record<string, string>> = {
       "Risolve la ricerca frammentata di film e serie unificando i risultati TMDB in un'unica griglia con ricerca in tempo reale. Sviluppo individuale in React, Vite e Axios — chiamate API parallele normalizzate in un'interfaccia responsive con locandine, valutazioni e titoli originali.",
     "projects.1.description":
       "Sostituisce i fogli di calcolo di una squadra di calcio amatoriale con una piattaforma gestionale: rosa in tempo reale, calendario partite, classifica automatica e statistiche giocatori. Sviluppo full-stack individuale in React e Firebase/Firestore, con autenticazione e sincronizzazione dati in tempo reale.",
-    "projects.2.description":
-      "Homepage di DC Comics ricostruita fedelmente per esercitare un'architettura UI scalabile. Progetto front-end individuale in React/Vite strutturato su componenti riutilizzabili (Header, Main, ServicesBanner, Footer) con rendering dinamico guidato dai dati.",
 
     // Workbench
     "workbench.eyebrow": "Lavori in corso",

@@ -133,41 +133,6 @@ Expanding to multi-location support, calendar integrations, and automated remind
     featured: false,
     color: "from-purple-500/20 to-pink-500/20",
   },
-  {
-    id: 4,
-    slug: "dc-comics-component-architecture",
-    title: "Component Architecture in a DC Comics Clone",
-    excerpt:
-      "Replicating the DC Comics homepage with reusable React components and a modular layout structure.",
-    content: `
-## Project Goal
-
-Recreate the DC Comics homepage look and feel using React and Vite, focusing on component reusability and clean separation of concerns.
-
-## Component Structure
-
-The app is split into four main sections:
-- **Header**: Navigation and branding
-- **Main**: Hero jumbotron with dynamic content
-- **ServicesBanner**: Service cards with icons and links
-- **Footer**: Social links and site navigation
-
-## Dynamic Rendering
-
-Each section receives data as props, making it straightforward to swap content or extend the layout without rewriting markup. Assets are organized under \`src/assets\` for maintainability.
-
-## Takeaway
-
-Studying an existing design system and breaking it into React components is excellent practice for understanding layout patterns, responsive design, and prop-driven architecture.
-    `,
-    date: "Oct 5, 2025",
-    readTime: "4 min read",
-    category: "frontend",
-    tags: ["react", "vite", "components"],
-    author,
-    featured: false,
-    color: "from-orange-500/20 to-amber-500/20",
-  },
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

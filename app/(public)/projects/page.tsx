@@ -6,7 +6,7 @@ const baseUrl = siteConfig.url;
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Featured projects by Gabriele Bonucci — Boolflix, Trankiliti FC, and DC Comics. React, Firebase, and API integrations.",
+  description: "Featured projects by Gabriele Bonucci — Boolflix and Trankiliti FC. React, Firebase, and API integrations.",
   keywords: ["projects", "react", "firebase", "full stack", "Gabriele Bonucci"],
   openGraph: {
     title: `Projects — ${siteConfig.name}`,

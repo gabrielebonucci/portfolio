@@ -51,7 +51,6 @@ const recentActivity = [
   { type: "commit", project: "THELABCAFFE", message: "Update hero section and menu animations", time: "2 days ago" },
   { type: "commit", project: "react-boolflix", message: "Improve TMDB search result normalization", time: "1 week ago" },
   { type: "commit", project: "whatsapp-booking-bot", message: "Add n8n workflow for reservation confirmations", time: "3 days ago" },
-  { type: "commit", project: "react-dc-comics", message: "Refactor ServicesBanner component", time: "2 weeks ago" },
 ]
 
 export function WorkbenchPageContent() {

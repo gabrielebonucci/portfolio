@@ -27,6 +27,8 @@ export const featuredProjects: Array<{
     stars: 0,
     forks: 0,
     url: "https://github.com/gabrielebonucci/react-boolflix",
+    // Cover screenshot — replace the placeholder file at public/projects/boolflix-cover.png
+    thumbnail: "/projects/boolflix-cover.png",
     featured: true,
     highlight: true,
     role: "solo",
@@ -42,20 +44,8 @@ export const featuredProjects: Array<{
     stars: 0,
     forks: 0,
     url: "https://github.com/gabrielebonucci",
-    featured: true,
-    role: "solo",
-  },
-  {
-    id: 2,
-    title: "DC Comics",
-    description:
-      "Replica of the DC Comics homepage with reusable React components (Header, Main, ServicesBanner, Footer) and dynamic rendering of hero, services, and footer sections.",
-    tags: ["React", "Vite", "Components"],
-    status: "shipped",
-    year: "2025",
-    stars: 0,
-    forks: 0,
-    url: "https://github.com/gabrielebonucci/react-dc-comics",
+    // Cover screenshot — replace the placeholder file at public/projects/trankiliti-fc-cover.png
+    thumbnail: "/projects/trankiliti-fc-cover.png",
     featured: true,
     role: "solo",
   },
