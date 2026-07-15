@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/i18n"
 import { siteConfig } from "@/lib/site-config"
+
 import "./globals.css"
 
 // Configure fonts with proper options
