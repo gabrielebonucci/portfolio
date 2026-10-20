@@ -1,52 +1,67 @@
-export const featuredProjects: Array<{
-  id: number
+// Project list. Visible copy (summary, description) lives in lib/i18n.tsx
+// under `projects.<slug>.summary` and `projects.<slug>.description`.
+
+export type ProjectKind = "agency" | "personal" | "study"
+export type BandColor = "violet" | "orange" | "lime"
+
+export interface Project {
+  slug: string
   title: string
-  description: string
-  tags: string[]
-  status: string
+  kind: ProjectKind
   year: string
-  stars: number
-  forks: number
-  url: string
-  homepage?: string
-  featured: boolean
-  highlight?: boolean
-  // "solo" | "team" — drives the role tag on the card
-  role: "solo" | "team"
-  // Optional screenshot shown at the top of the card. Drop images in /public/projects/
+  stack: string[]
+  // Only the three main projects get a colour band
+  band?: BandColor
+  // Only public repositories: agency and Barton AI code is private
+  repoUrl?: string
+  liveUrl?: string
+  // Screenshot in /public/projects/
   thumbnail?: string
-}> = [
+}
+
+export const mainProjects: Project[] = [
   {
-    id: 0,
-    title: "Boolflix",
-    description:
-      "Netflix-style web app with real-time movie and TV series search via the TMDB API. Combines film and series results, displays posters, ratings, overviews, and original titles in a card grid layout.",
-    tags: ["React", "Vite", "Axios", "TMDB API"],
-    status: "shipped",
-    year: "2025",
-    stars: 0,
-    forks: 0,
-    url: "https://github.com/gabrielebonucci/react-boolflix",
-    // Cover screenshot at public/projects/boolflix.png
-    thumbnail: "/projects/boolflix.png",
-    featured: true,
-    highlight: true,
-    role: "solo",
+    slug: "barton-ai",
+    title: "Barton AI",
+    kind: "personal",
+    year: "2026",
+    stack: ["React", "Node.js", "Express", "SQLite", "Ollama"],
+    band: "violet",
   },
   {
-    id: 1,
+    slug: "gestionale-prenotazioni",
+    title: "Gestionale prenotazioni",
+    kind: "agency",
+    year: "2026",
+    stack: ["Laravel", "Livewire", "Stripe"],
+    band: "orange",
+  },
+  {
+    slug: "web-hospitality",
+    title: "Web Hospitality",
+    kind: "agency",
+    year: "2026",
+    stack: ["WordPress", "PHP", "Stripe"],
+    band: "lime",
+  },
+]
+
+export const otherProjects: Project[] = [
+  {
+    slug: "trankiliti-fc",
     title: "Trankiliti FC",
-    description:
-      "Website and management panel for an amateur football team built with React and Firebase. Real-time squad roster, match scheduling, automatic standings, news, and player statistics (goals and assists).",
-    tags: ["React", "Firebase", "Firestore", "Authentication"],
-    status: "shipped",
+    kind: "personal",
     year: "2025",
-    stars: 0,
-    forks: 0,
-    url: "https://github.com/gabrielebonucci",
-    // Cover screenshot at public/projects/trankiliti.png
+    stack: ["React", "Firebase"],
     thumbnail: "/projects/trankiliti.png",
-    featured: true,
-    role: "solo",
+  },
+  {
+    slug: "boolflix",
+    title: "Boolflix",
+    kind: "study",
+    year: "2025",
+    stack: ["React", "Vite", "Axios", "TMDB API"],
+    repoUrl: "https://github.com/gabrielebonucci/react-boolflix",
+    thumbnail: "/projects/boolflix.png",
   },
 ]
