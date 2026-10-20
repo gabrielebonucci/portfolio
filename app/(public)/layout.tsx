@@ -7,10 +7,10 @@ export default function PublicLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="min-h-screen">
+    <>
       <Header />
-      {children}
+      <main className="min-h-screen">{children}</main>
       <Footer />
-    </main>
+    </>
   );
 }

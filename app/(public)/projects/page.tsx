@@ -2,41 +2,23 @@ import { ProjectsPageContent } from "@/components/public/projects/projects-page-
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
-const baseUrl = siteConfig.url;
+const description =
+  "Progetti di Gabriele Bonucci: Barton AI, un gestionale prenotazioni in Laravel e il plugin WordPress Web Hospitality, sviluppati con Claude Code.";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Featured projects by Gabriele Bonucci — Boolflix and Trankiliti FC. React, Firebase, and API integrations.",
-  keywords: ["projects", "react", "firebase", "full stack", "Gabriele Bonucci"],
+  title: "Progetti",
+  description,
   openGraph: {
-    title: `Projects — ${siteConfig.name}`,
-    description: "Featured web development projects built with React, Firebase, and modern tooling.",
-    url: `${baseUrl}/projects`,
+    title: `Progetti | ${siteConfig.name}`,
+    description,
+    url: `${siteConfig.url}/projects`,
     type: "website",
-    images: [
-      {
-        url: `${baseUrl}/og-image-projects.png`,
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} Projects`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `Projects — ${siteConfig.name}`,
-    description: "Featured web development projects built with React, Firebase, and modern tooling.",
-    images: [`${baseUrl}/og-image-projects.png`],
   },
   alternates: {
-    canonical: `${baseUrl}/projects`,
+    canonical: `${siteConfig.url}/projects`,
   },
 };
 
 export default function ProjectsPage() {
-  return (
-    <div className="pt-24">
-      <ProjectsPageContent />
-    </div>
-  );
+  return <ProjectsPageContent />;
 }

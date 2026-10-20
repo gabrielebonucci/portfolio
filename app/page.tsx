@@ -1,15 +1,15 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { TechStack } from "@/components/tech-stack"
-import { ProjectsGrid } from "@/components/projects-grid"
-import { Workbench } from "@/components/workbench"
+import { ProjectBands } from "@/components/project-bands"
+import { OtherProjects } from "@/components/other-projects"
+import { ExperienceStrip } from "@/components/experience-strip"
 import { Footer } from "@/components/footer"
+import { mainProjects, otherProjects } from "@/lib/projects-data"
 import { generateWebsiteStructuredData, generatePersonStructuredData } from "@/lib/structured-data"
 import { siteConfig } from "@/lib/site-config"
 
 export default function Home() {
-  const baseUrl = siteConfig.url
-  const websiteStructuredData = generateWebsiteStructuredData(baseUrl)
+  const websiteStructuredData = generateWebsiteStructuredData(siteConfig.url)
   const personStructuredData = generatePersonStructuredData()
 
   return (
@@ -22,16 +22,14 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }}
       />
-      <main className="min-h-screen">
-        <div>
-          <Header />
-          <HeroSection />
-          <TechStack />
-          <ProjectsGrid />
-          <Workbench />
-          <Footer />
-        </div>
+      <Header />
+      <main>
+        <HeroSection />
+        <ProjectBands projects={mainProjects} />
+        <OtherProjects projects={otherProjects} />
+        <ExperienceStrip />
       </main>
+      <Footer />
     </>
   )
 }
