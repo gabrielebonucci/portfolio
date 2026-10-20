@@ -66,7 +66,7 @@ export function Header() {
       </nav>
 
       {isMenuOpen && (
-        <div id="mobile-menu" className="border-t border-line px-4 pb-5 pt-2 md:hidden">
+        <div id="mobile-menu" className="border-t border-line bg-paper px-4 pb-5 pt-2 md:hidden">
           <div className="flex flex-col">
             {navItems.map((item) => (
               <Link
