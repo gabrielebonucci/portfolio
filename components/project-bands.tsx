@@ -30,7 +30,7 @@ export function ProjectBands({ projects, detailed = false }: { projects: Project
           )}
         >
           <div>
-            <p className="text-sm font-semibold opacity-90">{t(`projects.kind.${project.kind}`)}</p>
+            <p className="text-sm font-semibold">{t(`projects.kind.${project.kind}`)}</p>
             <h3 className="mt-3 font-display text-[2.5rem] leading-[0.95]">{project.title}</h3>
             <p className="mt-3 max-w-sm text-[15px] leading-relaxed">
               {t(`projects.${project.slug}.${detailed ? "description" : "summary"}`)}
@@ -58,7 +58,7 @@ export function ProjectBands({ projects, detailed = false }: { projects: Project
                 )}
               </span>
             ) : (
-              <span className="font-medium opacity-80">{t("projects.privateNote")}</span>
+              <span className="font-medium">{t("projects.privateNote")}</span>
             )}
           </div>
         </article>

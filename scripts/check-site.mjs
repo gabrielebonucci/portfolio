@@ -79,6 +79,13 @@ function i18nKeys(source, lang) {
   }
 }
 
+// Static: text on colour bands must keep full opacity (white at 80% on violet drops below 4.5:1)
+{
+  const bands = fs.readFileSync(path.join(root, "components/project-bands.tsx"), "utf8")
+  const faded = bands.match(/\bopacity-\d+/g) ?? []
+  check("band text has full opacity", faded.length === 0, faded.join(", "))
+}
+
 // Live: pages, redirects, CV
 async function live() {
   for (const [route, needles] of Object.entries(REQUIRED)) {
