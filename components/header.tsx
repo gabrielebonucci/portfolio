@@ -6,8 +6,6 @@ import { cn } from "@/lib/utils"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
 import { useLanguage } from "@/lib/i18n"
-import { ThemeToggle } from "./theme-toggle"
-import { ThemeChanger } from "./theme-changer"
 import { LanguageToggle } from "./language-toggle"
 import Link from "next/link"
 
@@ -108,9 +106,7 @@ export function Header() {
               </Link>
             ))}
             <div className="ml-2 flex items-center gap-1">
-              <ThemeChanger />
               <LanguageToggle />
-              <ThemeToggle />
             </div>
           </div>
 
@@ -211,13 +207,7 @@ export function Header() {
                 </a>
               ))}
               <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50">
-                <ThemeChanger />
-              </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50">
                 <LanguageToggle />
-              </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border/50">
-                <ThemeToggle />
               </div>
             </div>
 

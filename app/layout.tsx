@@ -1,28 +1,24 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google"
+import { Anton, Instrument_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/i18n"
 import { siteConfig } from "@/lib/site-config"
 
 import "./globals.css"
 
-// Configure fonts with proper options
-const geist = Geist({
+// Display face for headlines, sans for everything else
+const anton = Anton({
   subsets: ["latin"],
-  variable: '--font-geist',
-  display: 'swap',
+  weight: "400",
+  variable: "--font-anton",
+  display: "swap",
 })
-const geistMono = Geist_Mono({
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
-  variable: '--font-geist-mono',
-  display: 'swap',
-})
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: '--font-space-grotesk',
-  display: 'swap',
+  weight: ["400", "500", "600"],
+  variable: "--font-instrument",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -33,15 +29,14 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Full Stack Developer",
-    "Web Development",
+    "Web Developer",
     "React",
     "JavaScript",
-    "Node.js",
-    "AI Automation",
-    "n8n",
+    "WordPress",
+    "Claude Code",
     "Gabriele Bonucci",
     "Spoleto",
+    "Umbria",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.github }],
   creator: siteConfig.name,
@@ -106,11 +101,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${geist.variable} ${geistMono.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={true} storageKey="theme-mode">
-          <LanguageProvider>{children}</LanguageProvider>
-        </ThemeProvider>
+    <html lang="it" suppressHydrationWarning className={`${anton.variable} ${instrumentSans.variable}`}>
+      <body className="bg-paper text-ink font-sans antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
       </body>
     </html>

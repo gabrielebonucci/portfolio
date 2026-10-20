@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useState, useCallback, type React
 export type Language = "en" | "it"
 
 const STORAGE_KEY = "site-language"
-const DEFAULT_LANGUAGE: Language = "en"
+const DEFAULT_LANGUAGE: Language = "it"
 
 /**
  * Translation dictionary.

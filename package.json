@@ -1,15 +1,12 @@
 {
-  "name": "code-forge",
+  "name": "gabriele-bonucci-portfolio",
   "version": "0.1.0",
   "private": true,
-  "description": "A modern code editor built with Next.js and Radix UI.",
+  "description": "Portfolio di Gabriele Bonucci, web developer",
   "keywords": [
+    "portfolio",
     "nextjs",
-    "radix-ui",
-    "code editor",
-    "react",
-    "typescript",
-    "tailwindcss"
+    "react"
   ],
   "author": "Gabriele Bonucci",
   "scripts": {
