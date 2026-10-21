@@ -56,7 +56,7 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.web-beauty.summary":
       "Online booking for hair salons, beauty centres and similar businesses.",
     "projects.web-beauty.description":
-      "A tool built at the agency that lets customers book an appointment online at a hair salon, a beauty centre or a similar business.",
+      "A tool built at the agency that lets customers book an appointment online at a hair salon, a beauty centre or a similar business. Built with Claude Code.",
     "projects.trankiliti-fc.summary": "Website and phone-first admin for my 7-a-side football team.",
     "projects.trankiliti-fc.description":
       "The site of my team in the Seven League in Spoleto: results, next match, standings, squad and news. The admin runs on a phone, even during the match to log goals live, and standings and stats calculate themselves. Built with Claude Code.",
@@ -175,7 +175,7 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.web-beauty.summary":
       "Prenotazione online degli appuntamenti per parrucchieri, centri estetici e saloni.",
     "projects.web-beauty.description":
-      "Tool sviluppato in agenzia per prenotare online un appuntamento in un salone di parrucchieri, un centro estetico o un'attività simile.",
+      "Tool sviluppato in agenzia per prenotare online un appuntamento in un salone di parrucchieri, un centro estetico o un'attività simile. Sviluppato con Claude Code.",
     "projects.trankiliti-fc.summary": "Sito e gestionale da telefono per la mia squadra di calcio a 7.",
     "projects.trankiliti-fc.description":
       "Il sito della mia squadra nella Seven League di Spoleto: risultati, prossima partita, classifica, rosa e news. Il gestionale si usa dal telefono, anche durante la partita per segnare i gol in diretta, e classifica e statistiche si calcolano da sole. Sviluppato con Claude Code.",
