@@ -2,7 +2,7 @@
 // under `projects.<slug>.summary` and `projects.<slug>.description`.
 
 export type ProjectKind = "agency" | "personal" | "study"
-export type BandColor = "violet" | "orange" | "lime"
+export type BandColor = "violet" | "orange" | "lime" | "pink"
 
 export interface Project {
   slug: string
@@ -21,14 +21,6 @@ export interface Project {
 
 export const mainProjects: Project[] = [
   {
-    slug: "barton-ai",
-    title: "Barton AI",
-    kind: "personal",
-    year: "2026",
-    stack: ["React", "Node.js", "Express", "SQLite", "Ollama"],
-    band: "violet",
-  },
-  {
     slug: "gestionale-prenotazioni",
     title: "Gestionale prenotazioni",
     kind: "agency",
@@ -44,6 +36,22 @@ export const mainProjects: Project[] = [
     stack: ["WordPress", "PHP", "Stripe"],
     band: "lime",
   },
+  {
+    slug: "web-beauty",
+    title: "Web Beauty",
+    kind: "agency",
+    year: "2026",
+    stack: [],
+    band: "pink",
+  },
+  {
+    slug: "barton-ai",
+    title: "Barton AI",
+    kind: "personal",
+    year: "2026",
+    stack: ["React", "Node.js", "Express", "SQLite", "Ollama"],
+    band: "violet",
+  },
 ]
 
 export const otherProjects: Project[] = [
@@ -51,8 +59,9 @@ export const otherProjects: Project[] = [
     slug: "trankiliti-fc",
     title: "Trankiliti FC",
     kind: "personal",
-    year: "2025",
-    stack: ["React", "Firebase"],
+    year: "2026",
+    stack: ["React", "Vite", "Firebase"],
+    liveUrl: "https://trankilitifc-6f7ff.web.app",
     thumbnail: "/projects/trankiliti.png",
   },
   {

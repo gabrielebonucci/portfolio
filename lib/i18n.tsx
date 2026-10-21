@@ -33,7 +33,7 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.main": "Main projects",
     "projects.heading": "Projects",
     "projects.intro":
-      "Two projects built at the agency and one of my own, plus earlier work. The code of the agency projects is private.",
+      "Three projects built at the agency and one of my own, plus earlier work. The code of the agency projects is private.",
     "projects.others": "Other projects",
     "projects.code": "Code",
     "projects.live": "Live site",
@@ -46,16 +46,20 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.barton-ai.description":
       "A case study prepared for a job interview with a multi-utility company. Employees and HR handle leave, permits and remote work through a chat. The model runs locally with Ollama, so no employee data leaves the company. It never calculates on its own: it acts only through functions that apply the rules, with roles, approvals and an audit log. Built with Claude Code.",
     "projects.gestionale-prenotazioni.summary":
-      "One app for several farm stays, synced with Booking.com every 15 minutes.",
+      "One app to manage the bookings of several farm stays.",
     "projects.gestionale-prenotazioni.description":
-      "Internal prototype for GraphxStudio: booking calendar, room blocks and double-booking checks, iCal sync with Booking.com that flags conflicts, a public booking page for guests and a Stripe deposit. Three roles (agency, staff, guest) and 190 automated tests. Built with Claude Code.",
+      "Internal prototype for GraphxStudio: booking calendar, room blocks and double-booking checks, a public booking page for guests and a Stripe deposit. Three roles (agency, staff, guest) and 190 automated tests. Built with Claude Code.",
     "projects.web-hospitality.summary":
       "WordPress plugin for farm stays and B&Bs, with online booking and deposit.",
     "projects.web-hospitality.description":
-      "Built at the agency for farm stay and B&B websites: booking form with Stripe deposit, room calendar, seasons and rates, offers, guest area, check-in with submission to the Italian police portal (Alloggiati Web) and Booking.com sync via iCal. Works with any theme through shortcodes. Built with Claude Code.",
-    "projects.trankiliti-fc.summary": "Website and admin panel for an amateur football team.",
+      "Built at the agency for farm stay and B&B websites: booking form with Stripe deposit, room calendar, seasons and rates, offers, guest area and check-in with submission to the Italian police portal (Alloggiati Web). Works with any theme through shortcodes. Built with Claude Code.",
+    "projects.web-beauty.summary":
+      "Online booking for hair salons, beauty centres and similar businesses.",
+    "projects.web-beauty.description":
+      "A tool built at the agency that lets customers book an appointment online at a hair salon, a beauty centre or a similar business.",
+    "projects.trankiliti-fc.summary": "Website and phone-first admin for my 7-a-side football team.",
     "projects.trankiliti-fc.description":
-      "Squad, matches, standings that update themselves, news and goal and assist stats. Real-time Firestore and login for several admins.",
+      "The site of my team in the Seven League in Spoleto: results, next match, standings, squad and news. The admin runs on a phone, even during the match to log goals live, and standings and stats calculate themselves. Built with Claude Code.",
     "projects.boolflix.summary": "Movie and TV search with the TMDB API.",
     "projects.boolflix.description":
       "A Boolean bootcamp project: real-time search across movies and series, with posters, ratings and original language. Built from reusable components.",
@@ -72,7 +76,7 @@ const translations: Record<Language, Record<string, string>> = {
     "exp.graphx.desc": "Websites, plugins and booking tools for the agency's clients.",
     "exp.graphx.b1": "I build websites and web tools for clients, from design to launch.",
     "exp.graphx.b2":
-      "WordPress booking plugin for farm stays and B&Bs, and a booking management prototype in Laravel, both built with Claude Code.",
+      "WordPress booking plugin for farm stays and B&Bs, an appointment booking tool for salons (Web Beauty) and a booking management prototype in Laravel, built with Claude Code.",
     "exp.graphx.b3":
       "Maintenance and security of about 30 WordPress sites; hosting, domains, DNS and SSL on Plesk and cPanel.",
     "exp.graphx.b4":
@@ -148,7 +152,7 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.main": "Progetti principali",
     "projects.heading": "Progetti",
     "projects.intro":
-      "Due progetti fatti in agenzia e uno mio, più i lavori precedenti. Il codice dei progetti in agenzia è privato.",
+      "Tre progetti fatti in agenzia e uno mio, più i lavori precedenti. Il codice dei progetti in agenzia è privato.",
     "projects.others": "Altri progetti",
     "projects.code": "Codice",
     "projects.live": "Sito online",
@@ -161,16 +165,20 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.barton-ai.description":
       "Caso di studio preparato per un colloquio con un'azienda multi-utility. Dipendenti e HR gestiscono ferie, permessi e smart working in chat. Il modello gira in locale con Ollama, quindi nessun dato dei dipendenti esce dall'azienda. Non calcola niente da solo: agisce solo tramite funzioni che applicano le regole, con ruoli, approvazioni e registro delle azioni. Sviluppato con Claude Code.",
     "projects.gestionale-prenotazioni.summary":
-      "Una sola app per più agriturismi, sincronizzata con Booking.com ogni 15 minuti.",
+      "Una sola app per gestire le prenotazioni di più agriturismi.",
     "projects.gestionale-prenotazioni.description":
-      "Prototipo interno per GraphxStudio: calendario prenotazioni, blocchi camera e controllo delle doppie prenotazioni, sincronizzazione iCal con Booking.com che segnala i conflitti, pagina di prenotazione per l'ospite e caparra con Stripe. Tre ruoli (agenzia, staff, ospite) e 190 test automatici. Sviluppato con Claude Code.",
+      "Prototipo interno per GraphxStudio: calendario prenotazioni, blocchi camera e controllo delle doppie prenotazioni, pagina di prenotazione per l'ospite e caparra con Stripe. Tre ruoli (agenzia, staff, ospite) e 190 test automatici. Sviluppato con Claude Code.",
     "projects.web-hospitality.summary":
       "Plugin WordPress per agriturismi e B&B, con prenotazione e caparra online.",
     "projects.web-hospitality.description":
-      "Sviluppato in agenzia per i siti di agriturismi e B&B: modulo di prenotazione con caparra Stripe, calendario camere, stagioni e tariffe, offerte, area ospite, check-in con invio ad Alloggiati Web e sincronizzazione con Booking.com via iCal. Funziona con qualsiasi tema tramite shortcode. Sviluppato con Claude Code.",
-    "projects.trankiliti-fc.summary": "Sito e pannello di gestione per una squadra di calcio amatoriale.",
+      "Sviluppato in agenzia per i siti di agriturismi e B&B: modulo di prenotazione con caparra Stripe, calendario camere, stagioni e tariffe, offerte, area ospite e check-in con invio ad Alloggiati Web. Funziona con qualsiasi tema tramite shortcode. Sviluppato con Claude Code.",
+    "projects.web-beauty.summary":
+      "Prenotazione online degli appuntamenti per parrucchieri, centri estetici e saloni.",
+    "projects.web-beauty.description":
+      "Tool sviluppato in agenzia per prenotare online un appuntamento in un salone di parrucchieri, un centro estetico o un'attività simile.",
+    "projects.trankiliti-fc.summary": "Sito e gestionale da telefono per la mia squadra di calcio a 7.",
     "projects.trankiliti-fc.description":
-      "Rosa, partite, classifica che si aggiorna da sola, news e statistiche di gol e assist. Firestore in tempo reale e accesso per più amministratori.",
+      "Il sito della mia squadra nella Seven League di Spoleto: risultati, prossima partita, classifica, rosa e news. Il gestionale si usa dal telefono, anche durante la partita per segnare i gol in diretta, e classifica e statistiche si calcolano da sole. Sviluppato con Claude Code.",
     "projects.boolflix.summary": "Ricerca di film e serie TV con l'API di TMDB.",
     "projects.boolflix.description":
       "Progetto del Master Boolean: ricerca in tempo reale di film e serie, con locandine, voti e lingua originale. Costruito con componenti riutilizzabili.",
@@ -187,7 +195,7 @@ const translations: Record<Language, Record<string, string>> = {
     "exp.graphx.desc": "Siti, plugin e gestionali per i clienti dell'agenzia.",
     "exp.graphx.b1": "Sviluppo siti e strumenti web per i clienti, dalla progettazione alla messa online.",
     "exp.graphx.b2":
-      "Plugin WordPress di prenotazioni per agriturismi e B&B e prototipo di gestionale prenotazioni in Laravel, sviluppati con Claude Code.",
+      "Plugin WordPress di prenotazioni per agriturismi e B&B, tool di prenotazione appuntamenti per saloni (Web Beauty) e prototipo di gestionale prenotazioni in Laravel, sviluppati con Claude Code.",
     "exp.graphx.b3":
       "Manutenzione e sicurezza di circa 30 siti WordPress; hosting, domini, DNS e SSL su Plesk e cPanel.",
     "exp.graphx.b4":

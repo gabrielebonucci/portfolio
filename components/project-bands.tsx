@@ -9,6 +9,7 @@ const bandStyles: Record<BandColor, string> = {
   violet: "bg-band-violet text-white",
   orange: "bg-band-orange text-ink",
   lime: "bg-band-lime text-ink",
+  pink: "bg-band-pink text-ink",
 }
 
 // Main projects as full-colour bands: side by side on large screens, stacked below
@@ -16,7 +17,7 @@ export function ProjectBands({ projects, detailed = false }: { projects: Project
   const { t } = useLanguage()
 
   return (
-    <section aria-labelledby="main-projects" className="grid lg:grid-cols-3">
+    <section aria-labelledby="main-projects" className="grid sm:grid-cols-2 xl:grid-cols-4">
       <h2 id="main-projects" className="sr-only">
         {t("projects.main")}
       </h2>
@@ -37,7 +38,7 @@ export function ProjectBands({ projects, detailed = false }: { projects: Project
             </p>
           </div>
           <div className="flex flex-wrap items-end justify-between gap-3 text-sm font-semibold">
-            <span>{project.stack.join(", ")}</span>
+            {project.stack.length > 0 ? <span>{project.stack.join(", ")}</span> : <span />}
             {project.repoUrl || project.liveUrl ? (
               <span className="flex gap-4">
                 {project.repoUrl && (

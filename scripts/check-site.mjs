@@ -10,11 +10,11 @@ const BASE_URL = process.env.BASE_URL ?? "http://localhost:3000"
 const CV_SIZE = 60197 // ai-job-search/cv/main_portfolio_generale.pdf
 
 const REQUIRED = {
-  "/": ["GraphxStudio", "Barton AI", "Gestionale prenotazioni", "Web Hospitality", "Scarica il CV", "@unbugalgiorno", "Trankiliti FC"],
-  "/projects": ["Barton AI", "Gestionale prenotazioni", "Web Hospitality", "Trankiliti FC", "Boolflix"],
+  "/": ["GraphxStudio", "Barton AI", "Gestionale prenotazioni", "Web Hospitality", "Web Beauty", "Scarica il CV", "@unbugalgiorno", "Trankiliti FC"],
+  "/projects": ["Barton AI", "Gestionale prenotazioni", "Web Hospitality", "Web Beauty", "Trankiliti FC", "Boolflix"],
   "/introduction": ["GraphxStudio", "AgriEuro", "Very Important Web", "Boolean", "ITS Umbria Academy", "Inglese"],
 }
-const FORBIDDEN = ["whatsapp", "francese", "spagnolo", "french", "spanish", "ai automation specialist", "full stack web developer &", "terminal://", "gb lab", "workbench", "cursor-glow", "scanlines"]
+const FORBIDDEN = ["whatsapp", "francese", "spagnolo", "french", "spanish", "ai automation specialist", "full stack web developer &", "terminal://", "gb lab", "workbench", "cursor-glow", "scanlines", "15 minuti", "15 minutes", "booking.com"]
 const RAW_KEY = /\b(nav|hero|projects|intro|footer|home|exp)\.[a-z0-9-]+(\.[a-z0-9-]+)+\b/
 const PRIVATE_REPO = /github\.com\/gabrielebonucci\/(barton-ai-platform|gestionale-prenotazioni-agriturismo|gestione-prenotazioni)\b/
 const REDIRECTS = ["/blog", "/blog/boolflix-tmdb-react-search", "/workbench"]
@@ -68,6 +68,7 @@ function i18nKeys(source, lang) {
     ["white on band-violet", "#ffffff", v("band-violet")],
     ["ink on band-orange", v("ink"), v("band-orange")],
     ["ink on band-lime", v("ink"), v("band-lime")],
+    ["ink on band-pink", v("ink"), v("band-pink")],
     ["ink-muted on paper", v("ink-muted"), v("paper")],
   ]
   for (const [name, fg, bg] of pairs) {

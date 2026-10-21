@@ -11,6 +11,7 @@
   --band-violet: #6b3cff;
   --band-orange: #ff6a1a;
   --band-lime: #c6f432;
+  --band-pink: #ff7eb6;
 
   /* shadcn tokens used by components/ui */
   --background: var(--paper);
@@ -46,6 +47,7 @@
   --color-band-violet: var(--band-violet);
   --color-band-orange: var(--band-orange);
   --color-band-lime: var(--band-lime);
+  --color-band-pink: var(--band-pink);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
