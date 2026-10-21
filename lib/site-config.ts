@@ -4,7 +4,7 @@ export const siteConfig = {
   title: "Gabriele Bonucci, Web Developer",
   description:
     "Junior Web Developer da GraphxStudio. Costruisco siti e applicazioni web in React e JavaScript e sviluppo ogni giorno con Claude Code.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-xw9f-three.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.gabrielebonucci.com",
   location: "Spoleto, Umbria",
   role: "Junior Web Developer",
   employer: "GraphxStudio",

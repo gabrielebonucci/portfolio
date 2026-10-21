@@ -7,7 +7,8 @@ import { fileURLToPath } from "node:url"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const BASE_URL = process.env.BASE_URL ?? "http://localhost:3000"
-const CV_SIZE = 60197 // ai-job-search/cv/main_portfolio_generale.pdf
+const CV_SIZE = 62422 // ai-job-search/cv/main_portfolio_generale.pdf
+const SITE_DOMAIN = "https://www.gabrielebonucci.com"
 
 const REQUIRED = {
   "/": ["GraphxStudio", "Barton AI", "Gestionale prenotazioni", "Web Hospitality", "Web Beauty", "Scarica il CV", "@unbugalgiorno", "Trankiliti FC"],
@@ -117,6 +118,15 @@ async function live() {
     } catch (e) {
       check(`${route} redirects to /`, false, e.message)
     }
+  }
+
+  try {
+    const xml = await (await fetch(BASE_URL + "/sitemap.xml")).text()
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
+    const wrong = locs.filter((u) => !u.startsWith(SITE_DOMAIN))
+    check("sitemap uses the custom domain", locs.length > 0 && wrong.length === 0, wrong[0] ?? "no <loc>")
+  } catch (e) {
+    check("sitemap uses the custom domain", false, e.message)
   }
 
   try {
